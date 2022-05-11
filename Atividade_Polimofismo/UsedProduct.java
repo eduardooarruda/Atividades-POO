@@ -18,6 +18,7 @@ public class UsedProduct extends Product{
         return f.format(this.manufactureDate);
     }
 
+    @Override
     public String priceTag(){
         return super.priceTag() +
                "Manufacture Data: " + getManufactureDate() + "\n";
